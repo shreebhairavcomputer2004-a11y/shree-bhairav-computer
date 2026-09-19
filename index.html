@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shree Bhairav Computer Education | Computer Classes in Deesa</title>
+
+  <meta name="description"
+    content="Shree Bhairav Computer Education, Deesa - CCC, Tally Prime GST, Advanced Excel, Graphic Designing, Spoken English and Computer Training Classes.">
+
+  <meta name="keywords"
+    content="Computer Classes Deesa, CCC Classes Deesa, Tally Classes Deesa, Tally Prime GST, Computer Institute Deesa, Graphic Designing Deesa, Spoken English Deesa">
+
+  <meta name="author" content="Shree Bhairav Computer Education">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f9ff;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    /* TOP BAR */
+    .topbar {
+      background: #071d49;
+      color: white;
+      text-align: center;
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+
+    /* HEADER */
+    header {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+      color: #0757c9;
+    }
+
+    .logo span {
+      color: #f28c00;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #172033;
+      margin-left: 22px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #0757c9;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 570px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(135deg, rgba(3,35,91,0.96), rgba(0,91,180,0.88));
+      color: white;
+      padding: 70px 20px;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      max-width: 800px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #ffb52e;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 19px;
+      color: #e5efff;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #ff9f00;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #e88900;
+      transform: translateY(-2px);
+    }
+
+    .btn-light {
+      background: white;
+      color: #0757c9;
+    }
+
+    .btn-light:hover {
+      background: #eef5ff;
+      transform: translateY(-2px);
+    }
+
+    /* COMMON */
+    section {
+      padding: 75px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      color: #082d67;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #64748b;
+    }
+
+    /* COURSES */
+    .courses {
+      background: white;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .course-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 28px;
+      border: 1px solid #e4eaf2;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+      transition: 0.3s;
+    }
+
+    .course-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.11);
+    }
+
+    .course-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .course-card h3 {
+      color: #0757c9;
+      margin-bottom: 8px;
+    }
+
+    .course-card p {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+    .about {
+      background: #eef6ff;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about h2 {
+      font-size: 35px;
+      color: #082d67;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      color: #526174;
+      margin-bottom: 15px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .feature {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    /* MOCK TEST */
+    .mock {
+      background: linear-gradient(135deg, #062b67, #0874d1);
+      color: white;
+      text-align: center;
+    }
+
+    .mock h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .mock p {
+      max-width: 750px;
+      margin: 0 auto 25px;
+      color: #e4f1ff;
+    }
+
+    /* ADMISSION */
+    .admission {
+      background: white;
+    }
+
+    .form-box {
+      max-width: 850px;
+      margin: auto;
+      background: #f4f8ff;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    input,
+    select,
+    textarea {
+      padding: 13px;
+      border: 1px solid #ccd6e5;
+      border-radius: 7px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #0757c9;
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      border: none;
+      cursor: pointer;
+      background: #0757c9;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .submit-btn:hover {
+      background: #06479f;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #eef6ff;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 7px 25px rgba(0,0,0,0.06);
+    }
+
+    .contact-card .icon {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    .contact-card h3 {
+      color: #0757c9;
+      margin-bottom: 8px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #061a3d;
+      color: white;
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
+
+    footer h2 {
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      color: #b9c8df;
+      font-size: 14px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      margin-top: 25px;
+      padding-top: 20px;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 29px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      z-index: 2000;
+    }
+
+    /* MOBILE */
+    @media (max-width: 850px) {
+
+      .navbar {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      nav a {
+        margin-left: 0;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .course-grid,
+      .contact-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .hero {
+        min-height: 520px;
+        padding: 50px 18px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 55px 15px;
+      }
+
+      .section-title h2 {
+        font-size: 28px;
+      }
+
+      .form-box {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    📞 63593 65156 &nbsp; | &nbsp; 📍 Deesa, Gujarat
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="navbar">
+
+      <div class="logo">
+        SHREE BHAIRAV <span>COMPUTER EDUCATION</span>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#mock-test">Mock Test</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <h1>
+        Learn Computer Skills.<br>
+        <span>Build Your Future.</span>
+      </h1>
+
+      <p>
+        Professional computer education and practical training
+        at Shree Bhairav Computer Education, Deesa.
+      </p>
+
+      <a href="#admission" class="btn btn-primary">
+        📝 Admission Now
+      </a>
+
+      <a
+        href="https://wa.me/916359365156?text=Hello%20Shree%20Bhairav%20Computer%20Education,%20I%20want%20course%20and%20admission%20information."
+        class="btn btn-light"
+        target="_blank">
+        💬 WhatsApp Us
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- COURSES -->
+  <section class="courses" id="courses">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Our Courses</h2>
+        <p>Practical and job-oriented computer training</p>
+      </div>
+
+      <div class="course-grid">
+
+        <div class="course-card">
+          <div class="course-icon">💻</div>
+          <h3>CCC</h3>
+          <p>
+            Computer Basics, MS Office, Internet,
+            Digital Literacy and exam preparation.
+          </p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">📊</div>
+          <h3>Tally Prime + GST</h3>
+          <p>
+            Accounting, Tally Prime, GST,
+            Voucher Entry, Reports and practical training.
+          </p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">📈</div>
+          <h3>Advanced Excel</h3>
+          <p>
+            Formulas, Functions, VLOOKUP, HLOOKUP,
+            Pivot Table and data management.
+          </p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">🎨</div>
+          <h3>Graphic Designing</h3>
+          <p>
+            Photoshop, CorelDRAW, Canva,
+            DTP, poster and social media design.
+          </p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">🗣️</div>
+          <h3>Spoken English</h3>
+          <p>
+            Basic English, Grammar, Vocabulary,
+            Conversation and speaking practice.
+          </p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-icon">🖥️</div>
+          <h3>Computer Basics</h3>
+          <p>
+            Complete computer fundamentals,
+            typing, internet and digital skills.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="container">
+
+      <div class="about-grid">
+
+        <div>
+
+          <h2>About Shree Bhairav Computer Education</h2>
+
+          <p>
+            Shree Bhairav Computer Education is a computer
+            training institute in Deesa, Gujarat.
+          </p>
+
+          <p>
+            Our focus is on practical computer education,
+            exam preparation and job-oriented digital skills.
+          </p>
+
+          <p>
+            Students can learn computer applications through
+            practical training and regular practice.
+          </p>
+
+        </div>
+
+        <div class="features">
+
+          <div class="feature">✓ Practical Training</div>
+
+          <div class="feature">✓ Computer Lab</div>
+
+          <div class="feature">✓ Exam Preparation</div>
+
+          <div class="feature">✓ Job-Oriented Skills</div>
+
+          <div class="feature">✓ Online Practice</div>
+
+          <div class="feature">✓ Student Guidance</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MOCK TEST -->
+  <section class="mock" id="mock-test">
+
+    <div class="container">
+
+      <h2>🖥️ Online CCE / CBRT Mock Test</h2>
+
+      <p>
+        Practice computer-based examinations with
+        real-exam style online mock tests and improve
+        your preparation.
+      </p>
+
+      <a href="#admission" class="btn btn-primary">
+        Register for Mock Test
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- ADMISSION -->
+  <section class="admission" id="admission">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Admission / Inquiry</h2>
+        <p>Fill the form and contact us for course information</p>
+      </div>
+
+      <div class="form-box">
+
+        <form
+          action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse"
+          method="POST"
+          target="_blank">
+
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label>Student Name</label>
+              <input
+                type="text"
+                name="entry.NAME"
+                placeholder="Enter your name"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label>Mobile Number</label>
+              <input
+                type="tel"
+                name="entry.MOBILE"
+                placeholder="Enter mobile number"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label>Select Course</label>
+
+              <select name="entry.COURSE" required>
+
+                <option value="">
+                  Select Course
+                </option>
+
+                <option>CCC</option>
+                <option>Tally Prime + GST</option>
+                <option>Advanced Excel</option>
+                <option>Graphic Designing</option>
+                <option>Spoken English</option>
+                <option>Computer Basics</option>
+
+              </select>
+
+            </div>
+
+            <div class="form-group">
+              <label>Education</label>
+
+              <input
+                type="text"
+                name="entry.EDUCATION"
+                placeholder="Example: 12th / B.A. / B.Com">
+            </div>
+
+            <div class="form-group full">
+              <label>City / Village</label>
+
+              <input
+                type="text"
+                name="entry.CITY"
+                placeholder="Enter your city or village">
+            </div>
+
+            <div class="form-group full">
+              <label>Message</label>
+
+              <textarea
+                name="entry.MESSAGE"
+                placeholder="Write your inquiry"></textarea>
+            </div>
+
+            <div class="form-group full">
+
+              <button
+                type="submit"
+                class="submit-btn">
+                Submit Admission Inquiry
+              </button>
+
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Contact Us</h2>
+
+        <p>
+          Get in touch with Shree Bhairav Computer Education
+        </p>
+
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+
+          <div class="icon">📍</div>
+
+          <h3>Address</h3>
+
+          <p>
+            2nd Floor, Vimal Paras Complex,<br>
+            Opp. New Bus Stand,<br>
+            Pushpanjali Society, Indira Nagar,<br>
+            Deesa - 385535, Gujarat
+          </p>
+
+        </div>
+
+        <div class="contact-card">
+
+          <div class="icon">📞</div>
+
+          <h3>Call / WhatsApp</h3>
+
+          <p>
+            63593 65156
+          </p>
+
+          <br>
+
+          <a
+            href="tel:+916359365156"
+            class="btn btn-primary">
+            Call Now
+          </a>
+
+        </div>
+
+        <div class="contact-card">
+
+          <div class="icon">📧</div>
+
+          <h3>Email</h3>
+
+          <p>
+            shreebhairavcomputer2004@gmail.com
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <h2>SHREE BHAIRAV COMPUTER EDUCATION</h2>
+
+    <p>
+      Computer Education • Practical Training • Digital Skills
+    </p>
+
+    <div class="copyright">
+
+      © 2026 Shree Bhairav Computer Education.
+      All Rights Reserved.
+
+    </div>
+
+  </footer>
+
+  <!-- WHATSAPP -->
+  <a
+    class="whatsapp"
+    href="https://wa.me/916359365156?text=Hello%20Shree%20Bhairav%20Computer%20Education"
+    target="_blank"
+    title="Chat on WhatsApp">
+
+    ☎
+
+  </a>
+
+</body>
+</html>
